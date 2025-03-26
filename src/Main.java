@@ -1,4 +1,5 @@
 import Tasks.Task1;
+import Tasks.Task2;
 
 import java.util.Scanner;
 
@@ -30,7 +31,7 @@ public class Main {
                     Task1.problem();
                     break;
                 case 2:
-
+                    Task2.problem();
                     break;
                 case 3:
 
