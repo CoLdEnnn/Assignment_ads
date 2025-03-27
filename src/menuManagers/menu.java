@@ -5,6 +5,7 @@ import tasks.Task2;
 import tasks.Task3;
 import tasks.Task4;
 import tasks.Task5;
+import tasks.Task6;
 
 import java.util.Scanner;
 
@@ -36,7 +37,7 @@ public class menu {
                     Task5.problem();
                     break;
                 case 6:
-                    Task1.problem();
+                    Task6.problem();
                     break;
                 case 7:
                     Task1.problem();
