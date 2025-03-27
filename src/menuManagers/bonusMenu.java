@@ -1,31 +1,21 @@
-import menuManagers.bonusMenu;
-import menuManagers.menu;
+package menuManagers;
+
 import java.util.Scanner;
 
-public class Main {
+public class bonusMenu {
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        boolean exit = false;
-        while (!exit) {
-            System.out.println("\n---Main Menu---");
-            System.out.println("1. Tasks");
-            System.out.println("2. Bonus Tasks");
-            System.out.println("3. Exit");
+    public static void callBonusMenu() {
+        boolean back = false;
+        while (!back) {
+            System.out.println("\n---Bonus Menu---");
+            System.out.println("1. Choose Bonus Task 1-8");
+            System.out.println("2. Back");
             System.out.print("Your choice: ");
-
             int choice = getUserChoice();
-
             switch (choice) {
                 case 1:
-                    menu.callTasksMenu();
-                    break;
-                case 2:
-                    bonusMenu.callBonusMenu();
-                    break;
-                case 3:
-                    System.out.println("Exiting the program...");
-                    exit = true;
+
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
