@@ -1,5 +1,10 @@
 package menuManagers;
 
+import tasks.Task1;
+import tasks.Task2;
+import tasks.Task3;
+import tasks.Task4;
+
 import java.util.Scanner;
 
 public class menu {
@@ -9,19 +14,48 @@ public class menu {
         boolean back = false;
         while (!back) {
             System.out.println("\n---Tasks Menu---");
-            System.out.println("1. Choose Task 1-8");
-            System.out.println("2. Back");
+            System.out.println("1. Choose Task 1-10");
+            System.out.println("11. Back");
             System.out.print("Your choice: ");
             int choice = getUserChoice();
             switch (choice) {
                 case 1:
-
+                    Task1.problem();
+                    break;
+                case 2:
+                    Task2.problem();
+                    break;
+                case 3:
+                    Task3.problem();
+                    break;
+                case 4:
+                    Task4.problem();
+                    break;
+                case 5:
+                    Task1.problem();
+                    break;
+                case 6:
+                    Task1.problem();
+                    break;
+                case 7:
+                    Task1.problem();
+                    break;
+                case 8:
+                    Task1.problem();
+                    break;
+                case 9:
+                    Task1.problem();
+                    break;
+                case 10:
+                    Task1.problem();
+                    break;
+                case 11:
+                    back = true;
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
         }
-        scanner.close();
     }
 
     private static int getUserChoice() {
