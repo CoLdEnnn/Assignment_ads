@@ -1,11 +1,11 @@
-package Tasks;
+package tasks;
 
 import java.util.Scanner;
 
-public class Task2 {
+public class Task1 {
     public static void problem() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("You are given a number “n” and an array of “n” elements, write the function that returns average of them.");
+        System.out.println("You are given a number “n” and an array of “n” elements, write the function that returns minimum of them.");
         System.out.print("Enter number of elements in array: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -16,19 +16,21 @@ public class Task2 {
         }
 
         double startTime = System.nanoTime();
-        double result = avr(arr);
+        int result = findMin(arr);
         double endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1000000;
 
-        System.out.println("The average is: " + result);
+        System.out.println("The minimum is: " + result);
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
-    private static double avr(int[] arr) {
-        double sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+    private static int findMin(int[] arr) {
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
         }
-        return (double) sum / arr.length;
+        return min;
     }
 }
