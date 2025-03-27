@@ -6,8 +6,23 @@ public class Task2 {
     public static void problem() {
         Scanner sc = new Scanner(System.in);
         System.out.println("You are given a number “n” and an array of “n” elements, write the function that returns average of them.");
-        System.out.print("Enter number of elements in array: ");
-        int n = sc.nextInt();
+
+        int n;
+        while (true) {
+            System.out.print("Enter a positive number: ");
+            if (sc.hasNextInt()) {
+                n = sc.nextInt();
+                if (n >= 0) {
+                    break;
+                } else {
+                    System.out.println("Error: Enter a non-negative number.");
+                }
+            } else {
+                System.out.println("Error: Invalid input! Please enter a valid integer.");
+                sc.next();
+            }
+        }
+
         int[] arr = new int[n];
 
         System.out.print("Enter " + n + " elements:");
