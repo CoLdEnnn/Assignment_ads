@@ -2,18 +2,17 @@ package tasks;
 
 import java.util.Scanner;
 
-public class Task6 {
+public class Task7 {
     public static void problem() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("You are given numbers 'a' and 'n', write the function that returns 'a^n'.");
+        System.out.println("You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.");
 
-        int a, n;
+        int n;
         while (true) {
             System.out.print("Enter a positive number: ");
             if (sc.hasNextInt()) {
-                a = sc.nextInt();
                 n = sc.nextInt();
-                if (a >= 0 || n >= 0) {
+                if (n >= 0) {
                     break;
                 } else {
                     System.out.println("Error: Enter a non-negative number.");
@@ -24,16 +23,26 @@ public class Task6 {
             }
         }
 
+        int[] arr = new int[n];
+
+        System.out.print("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
         double startTime = System.nanoTime();
-        int result = powFunc(a, n);
+
         double endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1000000;
 
-        System.out.println(a + " to the power of " + n + " is " + result);
-        System.out.println("Time taken: " + duration + " milliseconds");
+        System.out.print("Reversed order: ");
+        reverse(n - 1, arr);
+        System.out.println("\nTime taken: " + duration + " milliseconds");
     }
 
-    private static int powFunc(int a, int n) {
-        return (int) Math.pow(a, n);
+    private static void reverse(int n, int[] arr) {
+        if (n < 0){ return; }
+        System.out.print(arr[n] + " ");
+        reverse(n - 1, arr);
     }
 }
+
