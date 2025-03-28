@@ -8,6 +8,7 @@ import tasks.Task5;
 import tasks.Task6;
 import tasks.Task7;
 import tasks.Task8;
+import tasks.Task9;
 
 import java.util.Scanner;
 
@@ -48,7 +49,7 @@ public class menu {
                     Task8.problem();
                     break;
                 case 9:
-                    Task1.problem();
+                    Task9.problem();
                     break;
                 case 10:
                     Task1.problem();
