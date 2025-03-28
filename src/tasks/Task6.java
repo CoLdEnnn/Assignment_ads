@@ -9,7 +9,7 @@ public class Task6 {
 
         int a, n;
         while (true) {
-            System.out.print("Enter a positive number: ");
+            System.out.print("Enter a positive numbers: ");
             if (sc.hasNextInt()) {
                 a = sc.nextInt();
                 n = sc.nextInt();
