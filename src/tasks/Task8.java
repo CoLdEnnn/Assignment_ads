@@ -22,6 +22,11 @@ public class Task8 {
         System.out.println("\nTime taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method checks if the string consists only digits
+     * The result is returned using boolean
+     */
+
     private static boolean isAllDigits(String s) {
         for (char c : s.toCharArray()) {
             if (!Character.isDigit(c)) {

@@ -39,6 +39,11 @@ public class Task7 {
         System.out.println("\nTime taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method reverses array numbers by index
+     * The result is returned using sout
+     */
+
     private static void reverse(int n, int[] arr) {
         if (n < 0){ return; }
         System.out.print(arr[n] + " ");
