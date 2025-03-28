@@ -32,6 +32,12 @@ public class Task4 {
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method calculates the factorial of a given number
+     * It uses a recursion
+     * The result is returned as an integer
+     */
+
     private static int factorial(int n) {
         if (n == 0 || n == 1) {
             return 1;

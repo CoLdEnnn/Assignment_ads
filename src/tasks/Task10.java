@@ -33,7 +33,11 @@ public class Task10 {
         System.out.println("GCD(" + a + ", " + b + ") = " + result);
         System.out.println("\nTime taken: " + duration + " milliseconds");
     }
-
+    /**
+     * This method finds gcd of given numbers using Euclidean Algorithm
+     * It uses recursion
+     * The result is returned as an integer
+     */
     private static int gcd(int a, int b) {
         if (b == 0) return Math.abs(a); // Ensure GCD is always positive
         return gcd(b, a % b);

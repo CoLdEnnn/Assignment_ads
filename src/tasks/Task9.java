@@ -39,6 +39,12 @@ public class Task9 {
         System.out.println("\nTime taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method finds Binomial Coefficient of given numbers using formula
+     * It uses recursion
+     * The result is returned as an integer
+     */
+
     private static int binomialCoefficient(int n, int k) {
         if (k == 0 || k == n) return 1;
         return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);

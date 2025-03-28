@@ -39,6 +39,10 @@ public class Task1 {
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method finds the minimum number of given array
+     * It uses a for loop to iterate through each number and compare
+     */
     private static int findMin(int[] arr) {
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {

@@ -33,6 +33,12 @@ public class Task6 {
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method calculates the power of a given number 'a' raised to the exponent 'n'
+     * It uses Math class
+     * The result is returned as an integer
+     */
+
     private static int powFunc(int a, int n) {
         return (int) Math.pow(a, n);
     }

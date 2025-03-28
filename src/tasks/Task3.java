@@ -18,6 +18,11 @@ public class Task3 {
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method defines whether a given integer 'n' is a prime number or a composite number
+     * Returns answer as a string
+     */
+
     private static String isPrime(int n) {
         if (n <= 1) {
             return "Composite";

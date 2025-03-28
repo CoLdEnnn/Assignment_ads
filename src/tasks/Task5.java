@@ -32,6 +32,12 @@ public class Task5 {
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method finds n-th element of Fibonacci sequence
+     * It uses a recursion
+     * The result is returned as an integer
+     */
+
     private static int fib(int n) {
         if (n == 0 || n == 1) { return n; }
         return fib(n - 1) + fib(n - 2);

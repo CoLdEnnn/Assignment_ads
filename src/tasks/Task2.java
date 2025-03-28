@@ -39,6 +39,12 @@ public class Task2 {
         System.out.println("Time taken: " + duration + " milliseconds");
     }
 
+    /**
+     * This method finds the average value of numbers in given array
+     * Returns average value using special method
+     * You don't need to create a new variable of the required dataType to store the value
+     */
+
     private static double avr(int[] arr) {
         double sum = 0;
         for (int i = 0; i < arr.length; i++) {
