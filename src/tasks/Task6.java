@@ -40,6 +40,6 @@ public class Task6 {
      */
 
     private static int powFunc(int a, int n) {
-        return (int) Math.pow(a, n);
+        return (int) a * powFunc(a, n - 1);
     }
 }
