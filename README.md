@@ -1,8 +1,9 @@
 ﻿# Main
-1. Write the number of task you want to see
-2. Read the task
-3. Enter required arguments
-4. Get result
+1. Run this file to start the program
+2. Write the number of task you want to see
+3. Read the task
+4. Enter required arguments
+5. Get result
 
 # Functions
 ### 1. Minimum of an array
